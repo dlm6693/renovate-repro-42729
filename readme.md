@@ -84,6 +84,22 @@ Both runs logged `Post-upgrade file saved` twice and pushed a branch.
 | `main` (282a0f365) | marker present | **marker missing** |
 | with [#45891](https://github.com/renovatebot/renovate/pull/45891) | marker present | marker present |
 
+Both branches Renovate pushed are kept so the result can be checked directly:
+
+- [`evidence/unpatched-main`](../../tree/evidence/unpatched-main) — `app/go.sum` has no marker
+- [`evidence/with-fix`](../../tree/evidence/with-fix) — `app/go.sum` has the marker
+The only difference between the two pushed branches is the one line the bug
+dropped. Use a two-dot diff — GitHub's compare view is three-dot and would show
+the dependency bump against `main` as well:
+
+```console
+$ git diff origin/evidence/unpatched-main origin/evidence/with-fix
+--- a/app/go.sum
++++ b/app/go.sum
+@@ -1,2 +1,3 @@
++// renovate-post-upgrade-marker
+```
+
 ## Notes
 
 The marker line makes `go.sum` invalid to the Go toolchain. That does not affect
