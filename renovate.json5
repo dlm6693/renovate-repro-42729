@@ -1,0 +1,12 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: ['config:recommended'],
+  // Makes each module's updateArtifacts() call also return its dependents'
+  // go.mod/go.sum, which is what produces duplicate updatedArtifacts entries.
+  postUpdateOptions: ['gomodTidyAll'],
+  postUpgradeTasks: {
+    commands: ['./post-upgrade.sh'],
+    fileFilters: ['**/go.sum'],
+    executionMode: 'branch',
+  },
+}
