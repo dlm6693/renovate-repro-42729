@@ -90,7 +90,7 @@ Both branches Renovate pushed are kept so the result can be checked directly:
 - [`evidence/with-fix`](../../tree/evidence/with-fix) — `app/go.sum` has the marker
 Full debug logs from both runs are in [`logs/`](logs). The decisive part is
 identical in both, at `logs/unpatched-main.log:793` and
-`logs/with-fix.log:790` — `app/go.sum` is listed twice, and the script's write
+`logs/with-fix.log:724` — `app/go.sum` is listed twice, and the script's write
 to it is read back and logged as saved:
 
 ```
