@@ -1,0 +1,1228 @@
+ INFO: Renovate started
+       "renovateVersion": "0.0.0-semantic-release"
+DEBUG: Using RE2 regex engine
+DEBUG: Parsing configs
+DEBUG: No config file found on disk - skipping
+DEBUG: No additional config file found specified - skipping
+DEBUG: File config
+       "config": {}
+DEBUG: Additional file config
+       "config": {}
+DEBUG: CLI config
+       "config": {}
+DEBUG: Env config
+       "config": {
+         "hostRules": [],
+         "allowedCommands": ["^\\./post-upgrade\\.sh$"],
+         "binarySource": "global",
+         "platform": "github",
+         "token": "***********",
+         "repositories": ["dlm6693/renovate-repro-42729"],
+         "gitAuthor": "repro <dlm6693@users.noreply.github.com>"
+       }
+DEBUG: Resolved global extends
+       "config": undefined
+DEBUG: Combined config
+       "config": {
+         "hostRules": [],
+         "allowedCommands": ["^\\./post-upgrade\\.sh$"],
+         "binarySource": "global",
+         "platform": "github",
+         "token": "***********",
+         "repositories": ["dlm6693/renovate-repro-42729"],
+         "gitAuthor": "repro <dlm6693@users.noreply.github.com>"
+       }
+DEBUG: Enabling forkProcessing while in non-autodiscover mode
+DEBUG: Enabling onboardingNoDeps while in non-autodiscover mode
+DEBUG: Found valid git version: 2.50.1
+DEBUG: Setting global hostRules
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: hostRules: authentication already set for api.github.com
+DEBUG: Using queue: host=api.github.com, concurrency=16
+DEBUG: Platform config
+       "platformConfig": {
+         "host": {"type": "github", "apiUrl": {}},
+         "isGHApp": false,
+         "userDetails": {
+           "username": "dlm6693",
+           "name": "David Miller",
+           "id": 45697098,
+           "email": null
+         }
+       },
+       "renovateUsername": "dlm6693"
+DEBUG: Using configured gitAuthor (repro <dlm6693@users.noreply.github.com>)
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: Using baseDir: /var/folders/6h/p7mxrg1j0j97fbmbxhczd86r0000gp/T/renovate
+DEBUG: Using cacheDir: /var/folders/6h/p7mxrg1j0j97fbmbxhczd86r0000gp/T/renovate/cache
+DEBUG: Initializing Renovate internal cache into /var/folders/6h/p7mxrg1j0j97fbmbxhczd86r0000gp/T/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+ INFO: Repository started (repository=dlm6693/renovate-repro-42729)
+       "renovateVersion": "0.0.0-semantic-release"
+DEBUG: Using localDir: /var/folders/6h/p7mxrg1j0j97fbmbxhczd86r0000gp/T/renovate/repos/github/dlm6693/renovate-repro-42729 (repository=dlm6693/renovate-repro-42729)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=dlm6693/renovate-repro-42729)
+DEBUG: initRepo("dlm6693/renovate-repro-42729") (repository=dlm6693/renovate-repro-42729)
+DEBUG: hostRules: authentication already set for api.github.com (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=dlm6693/renovate-repro-42729)
+DEBUG: dlm6693/renovate-repro-42729 default branch = main (repository=dlm6693/renovate-repro-42729)
+DEBUG: Issues cache: Adding 0 issues to reconcile queue (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using personal access token for git init (repository=dlm6693/renovate-repro-42729)
+DEBUG: fetchBranchCommits(): url=https://**redacted**@github.com/dlm6693/renovate-repro-42729.git (repository=dlm6693/renovate-repro-42729)
+DEBUG: Resetting npmrc (repository=dlm6693/renovate-repro-42729)
+DEBUG: Resetting npmrc (repository=dlm6693/renovate-repro-42729)
+DEBUG: checkOnboarding() (repository=dlm6693/renovate-repro-42729)
+DEBUG: isOnboarded() (repository=dlm6693/renovate-repro-42729)
+DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=dlm6693/renovate-repro-42729)
+DEBUG: PR cache: cached data not found, creating new cache (repository=dlm6693/renovate-repro-42729)
+DEBUG: PR cache: initial fetch (repository=dlm6693/renovate-repro-42729)
+DEBUG: http cache: saving https://api.github.com/repos/dlm6693/renovate-repro-42729/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag="e1a325274b8d26ddb42679b9614f88a97f41220f65b327dde11007f1e9e93552", lastModified=undefined) (repository=dlm6693/renovate-repro-42729)
+DEBUG: PR cache: Filtered 0 PRs to 0 (user=dlm6693) (repository=dlm6693/renovate-repro-42729)
+DEBUG: PR cache: getPrList success (repository=dlm6693/renovate-repro-42729)
+       "pullsTotal": 0,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true,
+       "durationMs": 212
+DEBUG: findPr(renovate/configure, chore: Configure Renovate, !open) (repository=dlm6693/renovate-repro-42729)
+DEBUG: findFile(renovate.json) (repository=dlm6693/renovate-repro-42729)
+DEBUG: syncGit(): Initializing git repository into /var/folders/6h/p7mxrg1j0j97fbmbxhczd86r0000gp/T/renovate/repos/github/dlm6693/renovate-repro-42729 (repository=dlm6693/renovate-repro-42729)
+DEBUG: Performing blobless clone (repository=dlm6693/renovate-repro-42729)
+DEBUG: git clone completed (repository=dlm6693/renovate-repro-42729)
+       "durationMs": 618
+DEBUG: latest repository commit (repository=dlm6693/renovate-repro-42729)
+       "latestCommit": {
+         "hash": "66b9b9fcf9888acd2603b09caa1c31fe37f9805b",
+         "date": "2026-09-11T10:27:57-04:00",
+         "message": "minimal reproduction for postUpgradeTasks stale content",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "dlm6693",
+         "author_email": "dlm6693@users.noreply.github.com"
+       }
+DEBUG: Current branch SHA: 66b9b9fcf9888acd2603b09caa1c31fe37f9805b (repository=dlm6693/renovate-repro-42729)
+DEBUG: findFile(renovate.jsonc) (repository=dlm6693/renovate-repro-42729)
+DEBUG: findFile(renovate.json5) (repository=dlm6693/renovate-repro-42729)
+DEBUG: Config file exists, fileName: renovate.json5 (repository=dlm6693/renovate-repro-42729)
+DEBUG: Retrieving issueList (repository=dlm6693/renovate-repro-42729)
+DEBUG: Retrieved 0 issues (repository=dlm6693/renovate-repro-42729)
+DEBUG: Issues cache: Setting 0 issues in cache (repository=dlm6693/renovate-repro-42729)
+DEBUG: Repo is onboarded (repository=dlm6693/renovate-repro-42729)
+DEBUG: Found renovate.json5 config file (repository=dlm6693/renovate-repro-42729)
+DEBUG: Repository config (repository=dlm6693/renovate-repro-42729)
+       "fileName": "renovate.json5",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": ["config:recommended"],
+         "postUpdateOptions": ["gomodTidyAll"],
+         "postUpgradeTasks": {
+           "commands": ["./post-upgrade.sh"],
+           "fileFilters": ["**/go.sum"],
+           "executionMode": "branch"
+         }
+       }
+DEBUG: migrateAndValidate() (repository=dlm6693/renovate-repro-42729)
+DEBUG: No config migration necessary (repository=dlm6693/renovate-repro-42729)
+DEBUG: Resolved shallow config, without merging internal presets (repository=dlm6693/renovate-repro-42729)
+       "renovateVersion": "0.0.0-semantic-release",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "postUpdateOptions": ["gomodTidyAll"],
+         "postUpgradeTasks": {
+           "commands": ["./post-upgrade.sh"],
+           "fileFilters": ["**/go.sum"],
+           "executionMode": "branch"
+         }
+       },
+       "visitedPresets": {"merged": [], "unmerged": ["config:recommended"]}
+DEBUG: Found repo ignorePaths (repository=dlm6693/renovate-repro-42729)
+       "ignorePaths": [
+         "**/node_modules/**",
+         "**/bower_components/**",
+         "**/vendor/**",
+         "**/examples/**",
+         "**/__tests__/**",
+         "**/test/**",
+         "**/tests/**",
+         "**/__fixtures__/**"
+       ]
+DEBUG: http cache: saving https://api.github.com/repos/dlm6693/renovate-repro-42729/dependabot/alerts?state=open&direction=asc&per_page=100 (etag="d95ead069c64413371b47f19106ec5ce9f7bc855fca8e6cfeb2ad4e022dced89", lastModified=undefined) (repository=dlm6693/renovate-repro-42729)
+DEBUG: No vulnerability alerts found (repository=dlm6693/renovate-repro-42729)
+DEBUG: No vulnerability alerts found (repository=dlm6693/renovate-repro-42729)
+DEBUG: findIssue(Dependency Dashboard) (repository=dlm6693/renovate-repro-42729)
+DEBUG: No baseBranches (repository=dlm6693/renovate-repro-42729)
+DEBUG: extract() (repository=dlm6693/renovate-repro-42729)
+DEBUG: Setting current branch to main (repository=dlm6693/renovate-repro-42729)
+DEBUG: latest commit (repository=dlm6693/renovate-repro-42729)
+       "branchName": "main",
+       "latestCommitDate": "2026-09-11T14:27:57.000Z",
+       "sha": "66b9b9fcf9888acd2603b09caa1c31fe37f9805b"
+DEBUG: Using file pattern: **/build.xml for manager ant (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)tasks/[^/]+\.ya?ml$/ for manager ansible (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$/ for manager ansible-galaxy (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)apm\.ya?ml$/ for manager apm (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.tool-versions$/ for manager asdf (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/).azuredevops/.+\.ya?ml$/ for manager azure-pipelines (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /azure.*pipelines?.*\.ya?ml$/ for manager azure-pipelines (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)batect(-bundle)?\.ya?ml$/ for manager batect (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)batect$/ for manager batect-wrapper (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)WORKSPACE(|\.bazel|\.bzlmod)$/ for manager bazel (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.WORKSPACE\.bazel$/ for manager bazel (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.bzl$/ for manager bazel (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/|\.)MODULE\.bazel$/ for manager bazel-module (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.bazelversion$/ for manager bazelisk (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.bicep$/ for manager bicep (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/*-pipelines.yml for manager bitbucket-pipelines (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)bitrise\.ya?ml$/ for manager bitrise (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /buildkite\.ya?ml/ for manager buildkite (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.buildkite/.+\.ya?ml$/ for manager buildkite (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)project\.toml$/ for manager buildpacks (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)bun\.lockb?$/ for manager bun (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)package\.json$/ for manager bun (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.bun-version$/ for manager bun-version (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Gemfile$/ for manager bundler (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.cake$/ for manager cake (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Cargo\.toml$/ for manager cargo (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.circleci/.+\.ya?ml$/ for manager circleci (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)cloudbuild\.ya?ml/ for manager cloudbuild (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Podfile$/ for manager cocoapods (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)([\w-]*)composer\.json$/ for manager composer (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)conanfile\.(txt|py)$/ for manager conan (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.copier-answers(\..+)?\.ya?ml/ for manager copier (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)cpanfile$/ for manager cpanfile (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^\.crow(?:/[^/]+)?\.ya?ml$/ for manager crow (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)deno\.lock$/ for manager deno (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)deno\.(json|jsonc)$/ for manager deno (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)(?:deps|bb)\.edn$/ for manager deps-edn (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)devbox\.json$/ for manager devbox (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^.devcontainer/devcontainer.json$/ for manager devcontainer (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^.devcontainer.json$/ for manager devcontainer (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^.devcontainer/[^/]+/devcontainer.json$/ for manager devcontainer (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)(?:docker-)?compose[^/]*\.ya?ml$/ for manager docker-compose (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/|\.)([Dd]ocker|[Cc]ontainer)file$/ for manager dockerfile (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/ for manager dockerfile (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.drone\.yml$/ for manager droneci (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)fleet\.ya?ml/ for manager fleet (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(?:^|/)gotk-components\.ya?ml$/ for manager flux (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.fvm/fvm_config\.json$/ for manager fvm (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.fvmrc$/ for manager fvm (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.gitmodules$/ for manager git-submodules (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)(workflow-templates|\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\.ya?ml$/ for manager github-actions (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)action\.ya?ml$/ for manager github-actions (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci-include (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)gleam.toml$/ for manager gleam (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)go\.mod$/ for manager gomod (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.gradle(\.kts)?$/ for manager gradle (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)gradle\.properties$/ for manager gradle (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)gradle/.+\.toml$/ for manager gradle (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)buildSrc/.+\.kt$/ for manager gradle (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.versions\.toml$/ for manager gradle (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)versions.props$/ for manager gradle (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)versions.lock$/ for manager gradle (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)gradle/wrapper/gradle-wrapper\.properties$/ for manager gradle-wrapper (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.cabal$/ for manager haskell-cabal (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)requirements\.ya?ml$/ for manager helm-requirements (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)values\.ya?ml$/ for manager helm-values (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)helmfile\.ya?ml(?:\.gotmpl)?$/ for manager helmfile (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)helmfile\.d/.+\.ya?ml(?:\.gotmpl)?$/ for manager helmfile (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Chart\.ya?ml$/ for manager helmv3 (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)bin/hermit$/ for manager hermit (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)manifest\.json$/ for manager homeassistant-manifest (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^Formula/\w*/?[^/]+[.]rb$/ for manager homebrew (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.html?$/ for manager html (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)plugins\.(txt|ya?ml)$/ for manager jenkins (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)jsonnetfile\.json$/ for manager jsonnet-bundler (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^.+\.main\.kts$/ for manager kotlin-script (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)kustomization\.ya?ml$/ for manager kustomize (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)project\.clj$/ for manager leiningen (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/|\.)pom\.xml$/ for manager maven (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)pom\.template\.xml$/ for manager maven (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^(((\.mvn)|(\.m2))/)?settings\.xml$/ for manager maven (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.mvn/extensions\.xml$/ for manager maven (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|\/).mvn/wrapper/maven-wrapper.properties$/ for manager maven-wrapper (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|\/)mvnw(.cmd)?$/ for manager maven-wrapper (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)package\.js$/ for manager meteor (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Mintfile$/ for manager mint (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/{,.}mise{,.*}.toml for manager mise (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/{,.}mise/config{,.*}.toml for manager mise (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/.config/mise{,.*}.toml for manager mise (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/.config/mise/{mise,config}{,.*}.toml for manager mise (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/.config/mise/conf.d/*.toml for manager mise (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/.rtx{,.*}.toml for manager mise (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)mix\.exs$/ for manager mix (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)flake\.nix$/ for manager nix (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.node-version$/ for manager nodenv (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)package\.json$/ for manager npm (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)pnpm-workspace\.yaml$/ for manager npm (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.yarnrc\.yml$/ for manager npm (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.(?:cs|fs|vb|sql)proj$/ for manager nuget (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.(?:props|targets)$/ for manager nuget (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)dotnet-tools\.json$/ for manager nuget (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)global\.json$/ for manager nuget (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.nvmrc$/ for manager nvm (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)src/main/features/.+\.json$/ for manager osgi (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager pep621 (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)[\w-]*requirements([-._]\w+)?\.(txt|pip)$/ for manager pip_requirements (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)setup\.py$/ for manager pip_setup (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Pipfile$/ for manager pipenv (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager pixi (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)pixi\.toml$/ for manager pixi (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager poetry (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.pre-commit-config\.ya?ml$/ for manager pre-commit (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/.prototools for manager proto (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)pubspec\.ya?ml$/ for manager pub (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Puppetfile$/ for manager puppet (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.python-version$/ for manager pyenv (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /.+\.container$/ for manager quadlet (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /.+\.image$/ for manager quadlet (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /.+\.volume$/ for manager quadlet (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: renovate.json for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: renovate.jsonc for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: renovate.json5 for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .github/renovate.json for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .github/renovate.jsonc for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .github/renovate.json5 for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .gitlab/renovate.json for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .gitlab/renovate.jsonc for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .gitlab/renovate.json5 for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .renovaterc for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .renovaterc.json for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .renovaterc.jsonc for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: .renovaterc.json5 for manager renovate-config (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.ruby-version$/ for manager ruby-version (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)runtime.txt$/ for manager runtime-version (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)rust-toolchain(\.toml)?$/ for manager rust-toolchain (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.sbt$/ for manager sbt (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /project/[^/]*\.scala$/ for manager sbt (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /project/build\.properties$/ for manager sbt (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)repositories$/ for manager sbt (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.scalafmt.conf$/ for manager scalafmt (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)setup\.cfg$/ for manager setup-cfg (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)smithy-build\.json$/ for manager smithy (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)Package\.swift/ for manager swift (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/*.tf for manager terraform (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/*.tofu for manager terraform (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.terraform-version$/ for manager terraform-version (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)terragrunt\.hcl$/ for manager terragrunt (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.terragrunt-version$/ for manager terragrunt-version (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.tflint\.hcl$/ for manager tflint-plugin (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^\.travis\.ya?ml$/ for manager travis (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /\.typ$/ for manager typst (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/ProjectSettings/ProjectVersion.txt for manager unity3d (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)\.vela\.ya?ml$/ for manager velaci (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /(^|/)vendir\.yml$/ for manager vendir (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: /^\.woodpecker(?:/[^/]+)?\.ya?ml$/ for manager woodpecker (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/project.yml for manager xcodegen (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/{j,t}sconfig.json for manager regex (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/{j,t}sconfig.*.json for manager regex (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/{j,t}sconfig.json for manager regex (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using file pattern: **/{j,t}sconfig.*.json for manager regex (repository=dlm6693/renovate-repro-42729)
+DEBUG: Matched 2 file(s) for manager gomod: app/go.mod, lib/go.mod (repository=dlm6693/renovate-repro-42729)
+DEBUG: Matched 1 file(s) for manager renovate-config: renovate.json5 (repository=dlm6693/renovate-repro-42729)
+DEBUG: manager extract durations (ms) (repository=dlm6693/renovate-repro-42729)
+       "managers": {"gomod": 2, "renovate-config": 1}
+DEBUG: Found gomod package files (repository=dlm6693/renovate-repro-42729)
+DEBUG: Found 2 package file(s) (repository=dlm6693/renovate-repro-42729)
+ INFO: Dependency extraction complete (repository=dlm6693/renovate-repro-42729, baseBranch=main)
+       "stats": {
+         "managers": {"gomod": {"fileCount": 2, "depCount": 6}},
+         "total": {"fileCount": 2, "depCount": 6}
+       }
+DEBUG: hostRules: no authentication for raw.githubusercontent.com (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using queue: host=raw.githubusercontent.com, concurrency=16 (repository=dlm6693/renovate-repro-42729)
+DEBUG: hostRules: no authentication for proxy.golang.org (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using queue: host=proxy.golang.org, concurrency=16 (repository=dlm6693/renovate-repro-42729)
+DEBUG: GET https://proxy.golang.org/github.com/google/uuid/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=57) (repository=dlm6693/renovate-repro-42729)
+DEBUG: GET https://proxy.golang.org/example.com/repro/lib/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=1177) (repository=dlm6693/renovate-repro-42729)
+DEBUG: hostRules: no authentication for example.com (repository=dlm6693/renovate-repro-42729)
+DEBUG: Using queue: host=example.com, concurrency=16 (repository=dlm6693/renovate-repro-42729)
+DEBUG: GET https://example.com/repro/lib?go-get=1 = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=156) (repository=dlm6693/renovate-repro-42729)
+DEBUG: Goproxy error: trying next URL provided with GOPROXY (repository=dlm6693/renovate-repro-42729)
+       "err": {
+         "name": "HTTPError",
+         "code": "ERR_NON_2XX_3XX_RESPONSE",
+         "timings": {
+           "start": 1789138274308,
+           "socket": 1789138274308,
+           "lookup": 1789138274337,
+           "connect": 1789138274339,
+           "secureConnect": 1789138274432,
+           "upload": 1789138274433,
+           "response": 1789138274463,
+           "end": 1789138274464,
+           "phases": {
+             "wait": 0,
+             "dns": 29,
+             "tcp": 2,
+             "tls": 93,
+             "request": 1,
+             "firstByte": 30,
+             "download": 1,
+             "total": 156
+           }
+         },
+         "options": {
+           "headers": {
+             "user-agent": "Renovate/0.0.0-semantic-release (https://github.com/renovatebot/renovate)",
+             "accept-encoding": "gzip, deflate, br, zstd"
+           },
+           "url": "https://example.com/repro/lib?go-get=1",
+           "hostType": "go",
+           "username": "",
+           "password": "",
+           "method": "GET",
+           "http2": false
+         },
+         "message": "Request failed with status code 404 (Not Found): GET https://example.com/repro/lib?go-get=1",
+         "response": {
+           "statusCode": 404,
+           "statusMessage": "Not Found",
+           "body": "<!doctype html><html lang=\"en\"><head><title>Example Domain</title><link rel=\"icon\" href=\"data:,\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href=\"https://iana.org/domains/example\">Learn more</a></p></div></body></html>\n",
+           "headers": {
+             "date": "Fri, 11 Sep 2026 14:51:14 GMT",
+             "content-type": "text/html",
+             "transfer-encoding": "chunked",
+             "connection": "keep-alive",
+             "server": "cloudflare",
+             "age": "7234",
+             "cf-cache-status": "HIT",
+             "cf-ray": "a3977d479d84c8e3-BOS"
+           },
+           "httpVersion": "1.1",
+           "retryCount": 0
+         }
+       }
+       HTTPError: Request failed with status code 404 (Not Found): GET https://**redacted**@16.0.0/node_modules/got/dist/source/as-promise/index.js:137:46
+           at Request.<anonymous> (file://~/Repositories/renovate/node_modules/.pnpm/got@16.0.0/node_modules/got/dist/source/as-promise/index.js:143:19)
+           at Request.wrapper (node:events:639:12)
+           at Request.emit (node:events:526:24)
+           at Request.emit (node:domain:489:12)
+           at Request._onResponseBase (file://~/Repositories/renovate/node_modules/.pnpm/got@16.0.0/node_modules/got/dist/source/core/index.js:1118:22)
+           at processTicksAndRejections (node:internal/process/task_queues:104:5)
+           at Request._onResponse (file://~/Repositories/renovate/node_modules/.pnpm/got@16.0.0/node_modules/got/dist/source/core/index.js:1187:13)
+DEBUG: Failed to look up go package example.com/repro/lib: no-result (repository=dlm6693/renovate-repro-42729, packageFile=app/go.mod, dependency=example.com/repro/lib)
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=dlm6693/renovate-repro-42729, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=dlm6693/renovate-repro-42729, baseBranch=main)
+DEBUG: Repository libYears (repository=dlm6693/renovate-repro-42729)
+       "libYears": {"managers": {"gomod": 2.532352003642987}, "total": 2.532352003642987},
+       "dependencyStatus": {"outdated": 1, "total": 4}
+DEBUG: branchifyUpgrades (repository=dlm6693/renovate-repro-42729)
+DEBUG: detectSemanticCommits() (repository=dlm6693/renovate-repro-42729)
+DEBUG: getCommitMessages (repository=dlm6693/renovate-repro-42729)
+DEBUG: semanticCommits: score=-1 (repository=dlm6693/renovate-repro-42729)
+DEBUG: semanticCommits: disabled (repository=dlm6693/renovate-repro-42729)
+DEBUG: 2 flattened updates found: github.com/google/uuid, github.com/google/uuid (repository=dlm6693/renovate-repro-42729)
+DEBUG: Returning 1 branch(es) (repository=dlm6693/renovate-repro-42729)
+DEBUG: Branch is not pending, removing pending upgrades (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: config.repoIsOnboarded=true (repository=dlm6693/renovate-repro-42729)
+DEBUG: packageFiles with updates (repository=dlm6693/renovate-repro-42729, baseBranch=main)
+       "config": {
+         "gomod": [
+           {
+             "deps": [
+               {
+                 "datasource": "golang-version",
+                 "versioning": "go-mod-directive",
+                 "depType": "golang",
+                 "depName": "go",
+                 "currentValue": "1.24",
+                 "commitMessageTopic": "go module directive",
+                 "managerData": {"lineNumber": 2},
+                 "updates": [],
+                 "packageName": "go",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/golang/go",
+                 "registryUrl": "https://raw.githubusercontent.com/golang/website",
+                 "homepage": "https://go.dev/",
+                 "mostRecentTimestamp": "2026-09-01T00:00:00.000Z",
+                 "currentVersion": "1.27.1",
+                 "currentVersionTimestamp": "2026-09-01T00:00:00.000Z",
+                 "currentVersionAgeInDays": 10
+               },
+               {
+                 "datasource": "go",
+                 "depType": "require",
+                 "depName": "example.com/repro/lib",
+                 "currentValue": "v0.0.0",
+                 "managerData": {"multiLine": true, "lineNumber": 5},
+                 "updates": [],
+                 "packageName": "example.com/repro/lib",
+                 "versioning": "semver",
+                 "warnings": [
+                   {
+                     "topic": "example.com/repro/lib",
+                     "message": "Failed to look up go package example.com/repro/lib: no-result"
+                   }
+                 ]
+               },
+               {
+                 "datasource": "go",
+                 "depType": "require",
+                 "depName": "github.com/google/uuid",
+                 "currentValue": "v1.3.0",
+                 "managerData": {"multiLine": true, "lineNumber": 6},
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "v1.6.0",
+                     "newValue": "v1.6.0",
+                     "releaseTimestamp": "2024-01-23T18:54:13.000Z",
+                     "newVersionAgeInDays": 961,
+                     "newMajor": 1,
+                     "newMinor": 6,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": false,
+                     "libYears": 2.532352003642987,
+                     "branchName": "renovate/github.com-google-uuid-1.x"
+                   }
+                 ],
+                 "packageName": "github.com/google/uuid",
+                 "versioning": "semver",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/google/uuid",
+                 "mostRecentTimestamp": "2024-01-23T18:54:13.000Z",
+                 "currentVersion": "v1.3.0",
+                 "currentVersionTimestamp": "2021-07-12T22:43:25.000Z",
+                 "currentVersionAgeInDays": 1886,
+                 "isSingleVersion": true,
+                 "fixedVersion": "v1.3.0"
+               },
+               {
+                 "datasource": "go",
+                 "depType": "replace",
+                 "depName": "../lib",
+                 "skipReason": "local-dependency",
+                 "managerData": {"lineNumber": 9},
+                 "updates": [],
+                 "packageName": "../lib"
+               }
+             ],
+             "extractedConstraints": {"%goMod": "~1.24.x"},
+             "constraintsVersioning": {"%goMod": "semver-coerced"},
+             "packageFile": "app/go.mod"
+           },
+           {
+             "deps": [
+               {
+                 "datasource": "golang-version",
+                 "versioning": "go-mod-directive",
+                 "depType": "golang",
+                 "depName": "go",
+                 "currentValue": "1.24",
+                 "commitMessageTopic": "go module directive",
+                 "managerData": {"lineNumber": 2},
+                 "updates": [],
+                 "packageName": "go",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/golang/go",
+                 "registryUrl": "https://raw.githubusercontent.com/golang/website",
+                 "homepage": "https://go.dev/",
+                 "mostRecentTimestamp": "2026-09-01T00:00:00.000Z",
+                 "currentVersion": "1.27.1",
+                 "currentVersionTimestamp": "2026-09-01T00:00:00.000Z",
+                 "currentVersionAgeInDays": 10
+               },
+               {
+                 "datasource": "go",
+                 "depType": "require",
+                 "depName": "github.com/google/uuid",
+                 "currentValue": "v1.3.0",
+                 "managerData": {"lineNumber": 4},
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "v1.6.0",
+                     "newValue": "v1.6.0",
+                     "releaseTimestamp": "2024-01-23T18:54:13.000Z",
+                     "newVersionAgeInDays": 961,
+                     "newMajor": 1,
+                     "newMinor": 6,
+                     "newPatch": 0,
+                     "updateType": "minor",
+                     "isBreaking": false,
+                     "libYears": 2.532352003642987,
+                     "branchName": "renovate/github.com-google-uuid-1.x"
+                   }
+                 ],
+                 "packageName": "github.com/google/uuid",
+                 "versioning": "semver",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/google/uuid",
+                 "mostRecentTimestamp": "2024-01-23T18:54:13.000Z",
+                 "currentVersion": "v1.3.0",
+                 "currentVersionTimestamp": "2021-07-12T22:43:25.000Z",
+                 "currentVersionAgeInDays": 1886,
+                 "isSingleVersion": true,
+                 "fixedVersion": "v1.3.0"
+               }
+             ],
+             "extractedConstraints": {"%goMod": "~1.24.x"},
+             "constraintsVersioning": {"%goMod": "semver-coerced"},
+             "packageFile": "lib/go.mod"
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=dlm6693/renovate-repro-42729)
+DEBUG: semanticCommits: returning "disabled" from cache (repository=dlm6693/renovate-repro-42729)
+DEBUG: processRepo() (repository=dlm6693/renovate-repro-42729)
+DEBUG: Processing 1 branch: renovate/github.com-google-uuid-1.x (repository=dlm6693/renovate-repro-42729)
+DEBUG: getBranchPr(renovate/github.com-google-uuid-1.x) (repository=dlm6693/renovate-repro-42729)
+DEBUG: findPr(renovate/github.com-google-uuid-1.x, undefined, open) (repository=dlm6693/renovate-repro-42729)
+DEBUG: 0 PRs are currently open (repository=dlm6693/renovate-repro-42729)
+DEBUG: ConcurrentPRs count = 0 (repository=dlm6693/renovate-repro-42729)
+DEBUG: 0 PRs are currently open (repository=dlm6693/renovate-repro-42729)
+DEBUG: VulnerabilityConcurrentPRs count = 0 (repository=dlm6693/renovate-repro-42729)
+DEBUG: 0 already existing branches found. (repository=dlm6693/renovate-repro-42729)
+DEBUG: Branches count = 0 (repository=dlm6693/renovate-repro-42729)
+DEBUG: 0 already existing branches found. (repository=dlm6693/renovate-repro-42729)
+DEBUG: VulnerabilityBranches count = 0 (repository=dlm6693/renovate-repro-42729)
+DEBUG: Calculating PRs created so far in this hour currentHourStart=2026-09-11T14:00:00.000Z (repository=dlm6693/renovate-repro-42729)
+DEBUG: 0 PRs have been created so far in this hour. (repository=dlm6693/renovate-repro-42729)
+DEBUG: HourlyPRs count = 0 (repository=dlm6693/renovate-repro-42729)
+DEBUG: Calculating commits so far in this hour currentHourStart=2026-09-11T14:00:00.000Z, for 1 branches (repository=dlm6693/renovate-repro-42729)
+DEBUG: getAllBranchUpdateDates (repository=dlm6693/renovate-repro-42729)
+DEBUG: 0 commits so far in this hour. (repository=dlm6693/renovate-repro-42729)
+DEBUG: HourlyCommits count = 0 (repository=dlm6693/renovate-repro-42729)
+DEBUG: syncBranchState() (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: getBranchPr(renovate/github.com-google-uuid-1.x) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: findPr(renovate/github.com-google-uuid-1.x, undefined, open) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: branchExists=false (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: findPr(renovate/github.com-google-uuid-1.x, Update module github.com/google/uuid to v1.6.0, !open) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: prAlreadyExisted=false (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Open PR Count: 0, Existing Branch Count: 0, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: prHourlyLimit of the upgrades present in this branch (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "limits": [{"depName": "github.com/google/uuid", "prHourlyLimit": 2}]
+DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: branchConcurrentLimit of the upgrades present in this branch (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "limits": [{"depName": "github.com/google/uuid", "branchConcurrentLimit": null}]
+DEBUG: Calculated lowest branchConcurrentLimit among the upgrades present in this branch is 10. (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: commitHourlyLimit of the upgrades present in this branch (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "limits": [{"depName": "github.com/google/uuid", "commitHourlyLimit": 0}]
+DEBUG: commitHourlyLimit of this branch is unlimited, because at least one of the upgrade has it's commitHourlyLimit set to "No limit" ie. 0 or null (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2026-09-11T14:51:14.579Z) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: No schedule defined (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: http cache: saving https://api.github.com/repos/dlm6693/renovate-repro-42729/rules/branches/main (etag="e1a325274b8d26ddb42679b9614f88a97f41220f65b327dde11007f1e9e93552", lastModified=undefined) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: GET https://api.github.com/repos/dlm6693/renovate-repro-42729/branches/main/protection = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=173) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: No branch-protection found for main (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for behind-base-branch applies (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Branch needs creating (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Setting current branch to main (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: latest commit (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "branchName": "main",
+       "latestCommitDate": "2026-09-11T14:27:57.000Z",
+       "sha": "66b9b9fcf9888acd2603b09caa1c31fe37f9805b"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: gomod.updateDependency: v1.6.0 (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Updating github.com/google/uuid in lib/go.mod (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: gomod.updateDependency: v1.6.0 (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Updating github.com/google/uuid in app/go.mod (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: gomod.updateArtifacts(app/go.mod) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: go mod tidy command included (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: go mod tidy command included (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: go mod tidy commands included (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dependentModules": []
+DEBUG: Ignoring tool contraints because of `binarySource=global` (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "toolConstraints": [{"toolName": "golang", "constraint": "^1.24"}]
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "command": "go get -t ./...",
+       "env": [
+         "GOPATH",
+         "GOFLAGS",
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "durationMs": 542,
+       "stdout": "",
+       "stderr": "go: downloading github.com/google/uuid v1.6.0\n"
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "command": "go mod tidy",
+       "env": [
+         "GOPATH",
+         "GOFLAGS",
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "durationMs": 75,
+       "stdout": "",
+       "stderr": ""
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "command": "go mod tidy",
+       "env": [
+         "GOPATH",
+         "GOFLAGS",
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "durationMs": 32,
+       "stdout": "",
+       "stderr": ""
+DEBUG: Returning updated go.sum (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: gomod.updateArtifacts(lib/go.mod) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: go mod tidy command included (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: go mod tidy command included (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: go mod tidy commands included (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dependentModules": ["app/go.mod"]
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "command": "go get -t ./...",
+       "env": [
+         "GOPATH",
+         "GOFLAGS",
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "durationMs": 127,
+       "stdout": "",
+       "stderr": ""
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "command": "go mod tidy",
+       "env": [
+         "GOPATH",
+         "GOFLAGS",
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "durationMs": 43,
+       "stdout": "",
+       "stderr": ""
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "command": "go mod tidy",
+       "env": [
+         "GOPATH",
+         "GOFLAGS",
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "durationMs": 33,
+       "stdout": "",
+       "stderr": ""
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "command": "go -C ../app mod tidy",
+       "env": [
+         "GOPATH",
+         "GOFLAGS",
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "durationMs": 34,
+       "stdout": "",
+       "stderr": ""
+DEBUG: Returning updated go.sum (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Updated 2 package files (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Updated 4 lock files (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "updatedArtifacts": ["app/go.sum", "lib/go.sum", "app/go.mod", "app/go.sum"]
+DEBUG: Executing command (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "command": "./post-upgrade.sh",
+       "env": [
+         "HOME",
+         "PATH",
+         "LANG",
+         "CI",
+         "GIT_CONFIG_KEY_0",
+         "GIT_CONFIG_VALUE_0",
+         "GIT_CONFIG_KEY_1",
+         "GIT_CONFIG_VALUE_1",
+         "GIT_CONFIG_KEY_2",
+         "GIT_CONFIG_VALUE_2",
+         "GIT_CONFIG_COUNT"
+       ]
+DEBUG: exec completed (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "durationMs": 202,
+       "stdout": "wrote marker to lib/go.sum\nwrote marker to app/go.sum\n",
+       "stderr": ""
+DEBUG: Executed post-upgrade task (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "cmd": "./post-upgrade.sh",
+       "stderr": "",
+       "stdout": "wrote marker to lib/go.sum\nwrote marker to app/go.sum\n"
+DEBUG: git status counts after post-upgrade tasks (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "addedCount": 0,
+       "modifiedCount": 4,
+       "deletedCount": 0,
+       "renamedCount": 0
+DEBUG: Checking 4 added or modified files for post-upgrade changes (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid"
+DEBUG: Post-upgrade file did not match any file filters (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "file": "app/go.mod"
+DEBUG: Post-upgrade file saved (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "file": "app/go.sum",
+       "pattern": "**/go.sum"
+DEBUG: Post-upgrade file did not match any file filters (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "file": "lib/go.mod"
+DEBUG: Post-upgrade file saved (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "dep": "github.com/google/uuid github.com/google/uuid",
+       "file": "lib/go.sum",
+       "pattern": "**/go.sum"
+DEBUG: 4 file(s) to commit (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-google-uuid-1.x (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Setting git author name: repro (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Setting git author email: dlm6693@users.noreply.github.com (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: git commit (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-google-uuid-1.x",
+         "commit": "80c36af7bb97b0932097fe37eca099a46decad29",
+         "root": false,
+         "summary": {"changes": 4, "insertions": 7, "deletions": 6}
+       }
+DEBUG: Pushing refSpec renovate/github.com-google-uuid-1.x:renovate/github.com-google-uuid-1.x (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: git push (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/github.com-google-uuid-1.x",
+             "remote": "refs/heads/renovate/github.com-google-uuid-1.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/github.com-google-uuid-1.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/github.com-google-uuid-1.x' on GitHub by visiting:",
+             "https://github.com/dlm6693/renovate-repro-42729/pull/new/renovate/github.com-google-uuid-1.x"
+           ],
+           "pullRequestUrl": "https://github.com/dlm6693/renovate-repro-42729/pull/new/renovate/github.com-google-uuid-1.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: latest commit (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "branchName": "main",
+       "latestCommitDate": "2026-09-11T14:27:57.000Z",
+       "sha": "66b9b9fcf9888acd2603b09caa1c31fe37f9805b"
+ INFO: Branch created (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "commitSha": "80c36af7bb97b0932097fe37eca099a46decad29"
+DEBUG: Ensuring PR (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: There are 0 errors and 0 warnings (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: getBranchPr(renovate/github.com-google-uuid-1.x) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: findPr(renovate/github.com-google-uuid-1.x, undefined, open) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: findPr(renovate/github.com-google-uuid-1.x, undefined, closed) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Fetching changelog: https://github.com/google/uuid (v1.3.0 -> v1.6.0) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Fetching changelog: https://github.com/google/uuid (v1.3.0 -> v1.6.0) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: http cache: saving https://api.github.com/repos/google/uuid (etag=W/"57af39ae068a8e639e75bfd732e636fbdb4a984c796e8939b958340f8d94d562", lastModified=Fri, 11 Sep 2026 02:42:09 GMT) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: http cache: saving https://api.github.com/repos/google/uuid/git/trees/master (etag=W/"41538b75e923b2b940a09b3a985b5683928330b616ed9b6942b49273908fadcf", lastModified=Fri, 11 Sep 2026 02:42:09 GMT) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: http cache: saving https://api.github.com/repos/google/uuid/git/blobs/7ec5ac7ea9090372537f98b6d4a206485b902248 (etag=W/"21b9c52915cf58df65f87ba9020437105fc3671e1c02baa08fdd74ccb477b655", lastModified=undefined) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+ WARN: Package lookup failures (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "warnings": ["Failed to look up go package example.com/repro/lib: no-result"],
+       "files": ["app/go.mod"]
+DEBUG: Creating PR (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "prTitle": "Update module github.com/google/uuid to v1.6.0"
+DEBUG: prHourlyLimit of the upgrades present in this branch (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "limits": [{"depName": "github.com/google/uuid", "prHourlyLimit": 2}]
+DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: prConcurrentLimit of the upgrades present in this branch (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "limits": [{"depName": "github.com/google/uuid", "prConcurrentLimit": 10}]
+DEBUG: Calculated lowest prConcurrentLimit among the upgrades present in this branch is 10. (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Creating PR (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "title": "Update module github.com/google/uuid to v1.6.0",
+       "head": "dlm6693:renovate/github.com-google-uuid-1.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "pr": 1,
+       "draft": false
+DEBUG: Adding labels '' to #1 (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+ INFO: PR created (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+       "pr": 1,
+       "prTitle": "Update module github.com/google/uuid to v1.6.0",
+       "labels": []
+DEBUG: addParticipants(pr=1) (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: setPrCache() (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: Created Pull Request #1 (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: PR is not configured for automerge (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: setBranchCommit() (repository=dlm6693/renovate-repro-42729, branch=renovate/github.com-google-uuid-1.x)
+DEBUG: getBranchPr(renovate/github.com-google-uuid-1.x) (repository=dlm6693/renovate-repro-42729)
+DEBUG: findPr(renovate/github.com-google-uuid-1.x, undefined, open) (repository=dlm6693/renovate-repro-42729)
+DEBUG: Found PR #1 (repository=dlm6693/renovate-repro-42729)
+DEBUG: getBranchUpdateDate(): using cached result "2026-09-11T10:51:17.000-04:00" (repository=dlm6693/renovate-repro-42729)
+DEBUG: http cache: saving https://api.github.com/repos/dlm6693/renovate-repro-42729/contents/renovate.json5 (etag="67700ee81a4fa1debb31c1531204ea686013caf8", lastModified=Fri, 11 Sep 2026 14:27:57 GMT) (repository=dlm6693/renovate-repro-42729)
+DEBUG: Config does not need migration (repository=dlm6693/renovate-repro-42729)
+DEBUG: ensureDependencyDashboard() (repository=dlm6693/renovate-repro-42729)
+DEBUG: Ensuring Dependency Dashboard (repository=dlm6693/renovate-repro-42729)
+DEBUG: Checking packageFiles for deprecated or replacement packages (repository=dlm6693/renovate-repro-42729)
+ WARN: Package lookup failures (repository=dlm6693/renovate-repro-42729)
+       "warnings": ["Failed to look up go package example.com/repro/lib: no-result"],
+       "files": ["app/go.mod"]
+DEBUG: ensureIssue(Dependency Dashboard) (repository=dlm6693/renovate-repro-42729)
+ INFO: Issue created (repository=dlm6693/renovate-repro-42729)
+DEBUG: Issues cache: Updating issue 2 in cache (repository=dlm6693/renovate-repro-42729)
+DEBUG: checkReconfigureBranch() (repository=dlm6693/renovate-repro-42729)
+DEBUG: No reconfigure branch found (repository=dlm6693/renovate-repro-42729)
+       "reconfigureBranch": "renovate/reconfigure"
+DEBUG: Removing any stale branches (repository=dlm6693/renovate-repro-42729)
+DEBUG: config.repoIsOnboarded=true (repository=dlm6693/renovate-repro-42729)
+DEBUG: Branch lists (repository=dlm6693/renovate-repro-42729)
+       "branchList": ["renovate/github.com-google-uuid-1.x"],
+       "renovateBranches": ["renovate/github.com-google-uuid-1.x"]
+DEBUG: remainingBranches= (repository=dlm6693/renovate-repro-42729)
+DEBUG: No branches to clean up (repository=dlm6693/renovate-repro-42729)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=dlm6693/renovate-repro-42729)
+DEBUG: Branch summary (repository=dlm6693/renovate-repro-42729)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "66b9b9fcf9888acd2603b09caa1c31fe37f9805b"}],
+       "branches": [
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "66b9b9fcf9888acd2603b09caa1c31fe37f9805b",
+           "branchName": "renovate/github.com-google-uuid-1.x",
+           "branchSha": "80c36af7bb97b0932097fe37eca099a46decad29",
+           "isModified": false,
+           "isPristine": true
+         }
+       ],
+       "defaultBranch": "main",
+       "inactiveBranches": []
+DEBUG: branches info extended (repository=dlm6693/renovate-repro-42729)
+       "branchesInformation": [
+         {
+           "branchName": "renovate/github.com-google-uuid-1.x",
+           "prNo": 1,
+           "prTitle": "Update module github.com/google/uuid to v1.6.0",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "go",
+               "depName": "github.com/google/uuid",
+               "displayPending": "",
+               "fixedVersion": "v1.3.0",
+               "currentVersion": "v1.3.0",
+               "currentValue": "v1.3.0",
+               "newValue": "v1.6.0",
+               "newVersion": "v1.6.0",
+               "packageFile": "lib/go.mod",
+               "updateType": "minor",
+               "packageName": "github.com/google/uuid"
+             },
+             {
+               "datasource": "go",
+               "depName": "github.com/google/uuid",
+               "displayPending": "",
+               "fixedVersion": "v1.3.0",
+               "currentVersion": "v1.3.0",
+               "currentValue": "v1.3.0",
+               "newValue": "v1.6.0",
+               "newVersion": "v1.6.0",
+               "packageFile": "app/go.mod",
+               "updateType": "minor",
+               "packageName": "github.com/google/uuid"
+             }
+           ]
+         }
+       ]
+DEBUG: Updates summary (repository=dlm6693/renovate-repro-42729)
+       "updateSummary": [
+         {
+           "baseBranch": "main",
+           "total": 2,
+           "vulnerabilityAlert": 0,
+           "updates": {"minor": 2},
+           "managers": {
+             "gomod": {"total": 2, "vulnerabilityAlert": 0, "updates": {"minor": 2}}
+           }
+         }
+       ]
+DEBUG: Renovate repository PR statistics (repository=dlm6693/renovate-repro-42729)
+       "stats": {"total": 1, "open": 1, "closed": 0, "merged": 0}
+DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=dlm6693/renovate-repro-42729)
+DEBUG: repository problems (repository=dlm6693/renovate-repro-42729)
+       "repoProblems": ["⚠️ WARN: Package lookup failures"]
+DEBUG: Repository timing splits (milliseconds) (repository=dlm6693/renovate-repro-42729)
+       "splits": {"init": 2609, "onboarding": 0, "extract": 300, "lookup": 1437, "update": 8589},
+       "total": 13529
+DEBUG: Package cache statistics (repository=dlm6693/renovate-repro-42729)
+       "get": {"count": 19, "avgMs": 1, "medianMs": 0, "maxMs": 3, "totalMs": 12},
+       "set": {"count": 25, "avgMs": 4, "medianMs": 3, "maxMs": 10, "totalMs": 105}
+DEBUG: Datasource cache statistics (repository=dlm6693/renovate-repro-42729)
+       "golang-version": {
+         "https://raw.githubusercontent.com/golang/website": {
+           "hit": 0,
+           "miss": 0,
+           "set": 0,
+           "skip": 1
+         }
+       },
+       "github-tags": {"https://api.github.com": {"hit": 0, "miss": 0, "set": 0, "skip": 1}}
+DEBUG: HTTP statistics (repository=dlm6693/renovate-repro-42729)
+       "hosts": {
+         "api.github.com": {
+           "count": 14,
+           "reqAvgMs": 362,
+           "reqMedianMs": 265,
+           "reqMaxMs": 1179,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         },
+         "example.com": {
+           "count": 1,
+           "reqAvgMs": 156,
+           "reqMedianMs": 156,
+           "reqMaxMs": 156,
+           "queueAvgMs": 1,
+           "queueMedianMs": 1,
+           "queueMaxMs": 1
+         },
+         "proxy.golang.org": {
+           "count": 17,
+           "reqAvgMs": 121,
+           "reqMedianMs": 26,
+           "reqMaxMs": 1177,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 1
+         },
+         "raw.githubusercontent.com": {
+           "count": 1,
+           "reqAvgMs": 91,
+           "reqMedianMs": 91,
+           "reqMaxMs": 91,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         }
+       },
+       "requests": 33
+DEBUG: HTTP cache statistics (repository=dlm6693/renovate-repro-42729)
+       "https://api.github.com": {
+         "/repos/dlm6693/renovate-repro-42729/contents/renovate.json5": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/repos/dlm6693/renovate-repro-42729/dependabot/alerts": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/repos/dlm6693/renovate-repro-42729/pulls": {"hit": 0, "miss": 1},
+         "/repos/dlm6693/renovate-repro-42729/rules/branches/main": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/repos/google/uuid": {"hit": 0, "miss": 1},
+         "/repos/google/uuid/git/blobs/7ec5ac7ea9090372537f98b6d4a206485b902248": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/repos/google/uuid/git/trees/master": {"hit": 0, "miss": 1}
+       }
+DEBUG: Lookup statistics (repository=dlm6693/renovate-repro-42729)
+       "golang-version": {"count": 2, "avgMs": 128, "medianMs": 128, "maxMs": 128, "totalMs": 255},
+       "go": {"count": 3, "avgMs": 991, "medianMs": 809, "maxMs": 1355, "totalMs": 2973}
+DEBUG: getReleases statistics summary (repository=dlm6693/renovate-repro-42729)
+       "stats": {
+         "count": 5,
+         "avgMs": 516,
+         "medianMs": 344.651167,
+         "maxMs": 1354.2868330000001,
+         "totalMs": 2581.64125
+       },
+       "datasources": {
+         "golang-version": {
+           "stats": {
+             "count": 1,
+             "avgMs": 110,
+             "medianMs": 109.900083,
+             "maxMs": 109.900083,
+             "totalMs": 109.900083
+           },
+           "registryUrls": {
+             "https://raw.githubusercontent.com/golang/website": {
+               "stats": {
+                 "count": 1,
+                 "avgMs": 110,
+                 "medianMs": 109.900083,
+                 "maxMs": 109.900083,
+                 "totalMs": 109.900083
+               }
+             }
+           }
+         },
+         "go": {
+           "stats": {
+             "count": 3,
+             "avgMs": 709,
+             "medianMs": 771.321417,
+             "maxMs": 1354.2868330000001,
+             "totalMs": 2127.09
+           },
+           "registryUrls": {
+             "": {
+               "stats": {
+                 "count": 3,
+                 "avgMs": 709,
+                 "medianMs": 771.321417,
+                 "maxMs": 1354.2868330000001,
+                 "totalMs": 2127.09
+               }
+             }
+           }
+         },
+         "github-tags": {
+           "stats": {
+             "count": 1,
+             "avgMs": 345,
+             "medianMs": 344.651167,
+             "maxMs": 344.651167,
+             "totalMs": 344.651167
+           },
+           "registryUrls": {
+             "https://api.github.com": {
+               "stats": {
+                 "count": 1,
+                 "avgMs": 345,
+                 "medianMs": 344.651167,
+                 "maxMs": 344.651167,
+                 "totalMs": 344.651167
+               }
+             }
+           }
+         }
+       }
+DEBUG: Cache fallback URLs (repository=dlm6693/renovate-repro-42729)
+       "count": 0,
+       "hits": {}
+DEBUG: Git operations statistics (repository=dlm6693/renovate-repro-42729)
+       "other": {
+         "count": 35,
+         "avgMs": 48,
+         "medianMs": 30.71872,
+         "maxMs": 273.93024,
+         "totalMs": 1681
+       },
+       "clone": {
+         "count": 2,
+         "avgMs": 336,
+         "medianMs": 617.339648,
+         "maxMs": 617.339648,
+         "totalMs": 672
+       },
+       "checkout": {
+         "count": 4,
+         "avgMs": 58,
+         "medianMs": 62.646528,
+         "maxMs": 68.995584,
+         "totalMs": 233
+       },
+       "reset": {
+         "count": 4,
+         "avgMs": 38,
+         "medianMs": 41.75616,
+         "maxMs": 44.249344,
+         "totalMs": 154
+       },
+       "clean": {
+         "count": 1,
+         "avgMs": 82,
+         "medianMs": 81.895936,
+         "maxMs": 81.895936,
+         "totalMs": 82
+       },
+       "push": {
+         "count": 1,
+         "avgMs": 2549,
+         "medianMs": 2548.766208,
+         "maxMs": 2548.766208,
+         "totalMs": 2549
+       }
+ INFO: Repository finished (repository=dlm6693/renovate-repro-42729)
+       "cloned": true,
+       "durationMs": 13529,
+       "result": "done",
+       "status": "onboarded",
+       "enabled": true,
+       "onboarded": true,
+       "exitCode": 0
+DEBUG: Checking file package cache for expired items
+DEBUG: Cache GC: kept 17 content entries (6599 bytes), removed 0 orphaned (0 bytes) in 20ms
+DEBUG: Deleted 0 of 17 file cached entries in 25ms

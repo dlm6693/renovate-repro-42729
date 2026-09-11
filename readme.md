@@ -88,6 +88,22 @@ Both branches Renovate pushed are kept so the result can be checked directly:
 
 - [`evidence/unpatched-main`](../../tree/evidence/unpatched-main) — `app/go.sum` has no marker
 - [`evidence/with-fix`](../../tree/evidence/with-fix) — `app/go.sum` has the marker
+Full debug logs from both runs are in [`logs/`](logs). The decisive part is
+identical in both, at `logs/unpatched-main.log:793` and
+`logs/with-fix.log:790` — `app/go.sum` is listed twice, and the script's write
+to it is read back and logged as saved:
+
+```
+"updatedArtifacts": ["app/go.sum", "lib/go.sum", "app/go.mod", "app/go.sum"]
+...
+DEBUG: Post-upgrade file saved   "file": "app/go.sum"
+DEBUG: Post-upgrade file saved   "file": "lib/go.sum"
+DEBUG: 4 file(s) to commit
+INFO: Branch created
+```
+
+Only the committed result differs.
+
 The only difference between the two pushed branches is the one line the bug
 dropped. Use a two-dot diff — GitHub's compare view is three-dot and would show
 the dependency bump against `main` as well:
