@@ -66,6 +66,24 @@ git show renovate/github.com-google-uuid-1.x:lib/go.sum | tail -1   # marker pre
 git show renovate/github.com-google-uuid-1.x:app/go.sum | tail -1   # marker missing
 ```
 
+## Verified
+
+Run against this repo with Renovate from source, `binarySource=global`, Go 1.26.6.
+
+Both runs produced the same artifact list, with `app/go.sum` appearing twice:
+
+```
+"updatedArtifacts": ["app/go.sum", "lib/go.sum", "app/go.mod", "app/go.sum"]
+DEBUG: 4 file(s) to commit
+```
+
+Both runs logged `Post-upgrade file saved` twice and pushed a branch.
+
+| Renovate | `lib/go.sum` (1 entry) | `app/go.sum` (2 entries) |
+| --- | --- | --- |
+| `main` (282a0f365) | marker present | **marker missing** |
+| with [#45891](https://github.com/renovatebot/renovate/pull/45891) | marker present | marker present |
+
 ## Notes
 
 The marker line makes `go.sum` invalid to the Go toolchain. That does not affect
